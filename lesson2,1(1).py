@@ -12,7 +12,7 @@ try:
     browser.get(link)
 
     chest = browser.find_element_by_id("treasure")
-    x = chest.get_attribute('valuex')
+    x = chest.get_attribute('value')
     y = calc(x)
 
     chest_open = browser.find_element_by_tag_name('input')
